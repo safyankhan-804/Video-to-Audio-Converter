@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video to Audio Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Video To Audio</h1>
+      <p>Convert your video into audio format</p>
+      <div class="file-upload">
+        <input type="file" id="videoInput" accept="video/*" />
+        <label for="videoInput" class="file-upload-label">
+          <img
+            src="https://img.icons8.com/ios/50/000000/video.png"
+            alt="Select File"
+            class="upload-icon"
+          />
+          <span>Select File</span>
+        </label>
+      </div>
+      <p id="fileCount" style="display: none">No file selected</p>
+      <button id="convertBtn">Convert to Audio</button>
+      <div
+        id="progressContainer"
+        class="progress-container"
+        style="display: none"
+      >
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <a id="downloadLink" style="display: none">Download Audio</a>
+      <button id="refreshBtn" style="display: none">Refresh</button>
+    </div>
+
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
